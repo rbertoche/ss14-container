@@ -27,7 +27,7 @@ WORKDIR /app
 
 #ADD config.toml /home/watchdog/instances/default/
 
-RUN git clone --single-branch --depth 1 https://github.com/space-wizards/SS14.Watchdog build; \
+RUN git clone --single-branch --depth 1 https://github.com/rbertoche/SS14.Watchdog build; \
 	cd build; \
 	dotnet publish -c Release --no-self-contained; \
 	mv SS14.Watchdog/bin/Release/net8.0/publish/* ..; \
