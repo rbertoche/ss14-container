@@ -37,3 +37,6 @@ RUN git clone --single-branch --depth 1 https://github.com/rbertoche/SS14.Watchd
 ADD appsettings.yml .
 
 CMD ./SS14.Watchdog
+
+expose 1212
+expose 5000
